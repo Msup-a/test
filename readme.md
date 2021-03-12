@@ -1,12 +1,12 @@
 ## 本地git
 
-- **第一步：**下载[Git](https://git-scm.com/download/)并安装
+- 第一步：下载[Git](https://git-scm.com/download/)并安装
 
-- **第二步：**新建一个空白的本地项目文件，并打开Git Bash
+- 第二步：新建一个空白的本地项目文件，并打开Git Bash
 
   ![6NIQ61.png](https://s3.ax1x.com/2021/03/12/6NIQ61.png)
 
-- **第三步：**要设置自己的身份，比如git提交代码的时候要让别人知道什么人提交了代码，
+- 第三步：要设置自己的身份，比如git提交代码的时候要让别人知道什么人提交了代码，
 
   设置身份内容有两条，一个是你的邮箱，另一个是你的称呼 ，以后你提交的代码都根据这个来确定是你提交的的了。“Your Name”填你想让别人知道的名字，“email@example.com”换成自己的邮箱。
 
@@ -19,9 +19,9 @@
   $ git config --global user.email "email@example.com"
   ```
 
-- **第四步（这一步我们应该已经完成了）：**从终端进入你想要记录内容更改的文件夹里例如我们进入`gittest`文件夹
+- 第四步（这一步我们应该已经完成了）：从终端进入你想要记录内容更改的文件夹里例如我们进入`gittest`文件夹
 
-- **第五步：**Git初始化
+- 第五步：Git初始化
 
   输入：
 
@@ -31,13 +31,13 @@
 
   这个文件夹以后的更改就会被记录了。（如果是空文件夹会提示`Initialized empty Git repository in /home/yep/code/gittest/.git/`，告诉你文件夹为空）
 
-- **第六步：**现在我们在文件夹里新建一个文件hello.txt,内容是
+- 第六步：现在我们在文件夹里新建一个文件hello.txt,内容是
 
   ```bash
   Hello World
   ```
 
-- **第七步：**保存后，我们使用`git add`命令，告诉git我们把文件添加到仓库缓存区了，在终端输入
+- 第七步：保存后，我们使用`git add`命令，告诉git我们把文件添加到仓库缓存区了，在终端输入
 
   ```bash
   $ git add hello.txt
@@ -45,7 +45,7 @@
 
   没有提示说明操作成功。
 
-- **第八步：**使用`git commit`命令，告诉git我们要把缓存区的所有文件正式提交到仓库：
+- 第八步：使用`git commit`命令，告诉git我们要把缓存区的所有文件正式提交到仓库：
 
   ```bash
   $ git commit -m "添加了hello.txt"
@@ -78,25 +78,25 @@
 
 ## github
 
-- **第一步：**注册账号[GitHub官网](https://github.com)
+- 第一步：注册账号[GitHub官网](https://github.com)
 
-- **第二步：**创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
+- 第二步：创建SSH Key。在用户主目录下，看看有没有.ssh目录，如果有，再看看这个目录下有没有id_rsa和id_rsa.pub这两个文件，如果已经有了，可直接跳到下一步。如果没有，打开Shell（Windows下打开Git Bash），创建SSH Key：
 
   ```ssh-keygen -t rsa -C "youremail@example.com" ```
 
   如果一切顺利的话，可以在用户主目录里找到.ssh目录，里面有`id_rsa`和`id_rsa.pub`两个文件，这两个就是SSH Key的秘钥对，`id_rsa`是私钥，不能泄露出去，`id_rsa.pub`是公钥，可以放心地告诉任何人。
   打开id_rsa.pub,复制里面的内容。
 
-- **第三步：**登陆GitHub，打开“Account settings”，“SSH Keys and GPG keys”页面：
+- 第三步：登陆GitHub，打开“Account settings”，“SSH Keys and GPG keys”页面：
   ![img](https://upload-images.jianshu.io/upload_images/4064394-79cd18224d3a27c6.png?imageMogr2/auto-orient/strip|imageView2/2/w/757/format/webp)
 
   然后，点“New SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容即可。
 
-- **第四步：**用浏览器打开https://github.com/oliverwang15/test并复制这个链接
+- 第四步：用浏览器打开https://github.com/oliverwang15/test并复制这个链接
 
   ![6NTsJg.png](https://s3.ax1x.com/2021/03/12/6NTsJg.png)
 
-- **第五步：**
+- 第五步：
 
   使用`Git clone`直接从远程仓库克隆下来
 
@@ -104,7 +104,7 @@
   $ git clone https://github.com/oliverwang15/test.git
   ```
 
-- **第六步：**把本地库的所有内容推送到远程库上
+- 第六步：把本地库的所有内容推送到远程库上
 
   ```bash
   $ git push
@@ -245,7 +245,7 @@ Git的版本回退速度非常快，因为Git在内部有个指向当前版本�
 
 
 
-![img](https:////upload-images.jianshu.io/upload_images/4064394-a7d7e6a6fbe2fc9f.png?imageMogr2/auto-orient/strip|imageView2/2/w/294/format/webp)
+![img](https://upload-images.jianshu.io/upload_images/4064394-a7d7e6a6fbe2fc9f.png?imageMogr2/auto-orient/strip|imageView2/2/w/294/format/webp)
 
 head指针
 
